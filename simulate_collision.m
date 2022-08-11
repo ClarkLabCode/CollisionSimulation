@@ -54,9 +54,9 @@ function simulate_collision(varargin)
     folded_phi_dot = phi_dot .* sign(phi); % + = ftb, - = btf
     temp = find(CR>0.2 & folded_phi_dot<-20);
     plot_example_trajectory(temp,x,y,vx,vy,observer_speed)
-    xlabel('x (mm)'); ylabel('y (mm)'); title('Objects with high collision risk and high ftb velocity')
+    xlabel('x (mm)'); ylabel('y (mm)'); title('Objects with high collision risk and high btf velocity')
 
-     license('inuse')
+    license('inuse')
 end
 
 
